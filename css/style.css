@@ -1,0 +1,306 @@
+/* all pages */
+html{
+	height:100%;
+	margin:0px;
+	padding:0px;
+	background-color:#FFF5EE;
+}
+
+.wrapper{
+	min-height:100%;
+	position:relative;
+	margin:0 auto;
+	min-width:800px;
+	max-width:1600px;
+	width:80%;
+}
+
+/* class for logo  */
+.logo{
+	margin-left:500px;
+	margin-bottom:0px;
+	padding:0px;
+	position:relative;
+	bottom:40px;
+}
+
+header h1{
+	margin-left:90px;
+	margin-bottom:0px;
+	position:relative;
+	right:20px;
+	top:60px;
+	padding:0px;
+}
+
+
+/* generate rainbow colour */
+/* https://rainbowcoding.com/how-to-create-rainbow-text-in-html-css-javascript/ */
+.rainbow {	
+  background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+  background-image: gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+  color:transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-align:center;
+}
+
+/* set all headings to be of the same font family */
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Ramabhadra', sans-serif;
+}
+
+/* make links blue on home page */
+a:visited,a:link{
+	color:blue;
+}
+
+p{
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+/* navigation */
+header{
+	text-align:center;
+	padding-top:0px;
+}
+
+nav{
+	text-align:center;
+}
+
+nav ul {
+	margin: 0px;
+	list-style-type: none;
+	/* top right bottom left */
+}
+
+nav ul li {
+	display: inline;
+	/* top and bottom, right and left */
+	text-align:justify;
+}
+
+nav ul li a{
+	text-decoration:none;
+	/* top and bottom, right and left */
+	padding: 20px 40px;
+	display:inline-block;
+	color:black;
+	font-family: 'Didact Gothic', sans-serif;
+}
+
+
+nav ul li a:link, nav ul li a:visited{
+	color:#954b4b;
+}
+
+nav ul li a:hover, nav ul li a:active{
+	/* black colour over hover and active links */
+	color:#000000;
+	background-color:#ffcccc;
+}
+
+/* highlight link element that the user is on */
+.selected{
+	background-color:#efe5d0;
+}
+
+/* index.php css */
+
+#profile{
+	/* top and bottom, right and left */
+	padding:25px 0px 10px 50px;
+	text-decoration:none;
+	text-align:center;
+}
+
+#profile_image{
+	float:right;
+	/* top right bottom left */
+	padding: 20px 0px 5px 0px;
+	margin-right:90px;
+}
+
+
+#home{
+	display:inline-block;
+	width:33%;
+	vertical-align:top;
+}
+
+
+
+#plm{
+	display:inline-block;
+	width:33%;
+	vertical-align:top;
+
+}
+
+#contact{
+	display:inline-block;
+	width:33%;
+	vertical-align:top;
+}
+
+#home_image{
+	margin-top:35px;
+}
+
+/* make links blue on index.php page */
+a:visited{
+	color:blue;
+}
+
+a:link{
+	color:blue;
+}
+
+/* contact.php css */
+
+
+label{
+	width:200px;
+	display:inline-block;
+}
+
+.required:after{
+	color:red;
+	content:"*";
+}
+
+input{
+	width:160px;
+	/* form elements to have same size text input */
+	box-sizing:border-box;
+}
+
+/*select{
+	width:168px;
+}*/
+
+option{
+	width:130px;
+}
+
+fieldset{
+	border:none;
+	text-align:center;
+	/* align the contact form page down */
+	margin-top:20px;
+
+}
+
+#contact_form{
+	text-align:center;
+}
+
+#contact_image{
+	float:right;
+}
+
+
+/* shop.php css */
+#plmS1{
+	margin-top:50px;
+	display:inline-block;
+	float:left;
+	margin-left:50px;
+	margin-right:50px;
+}
+
+.qty{
+	width: 100px;
+}
+
+#plmS2{
+	margin-top:50px;
+	display:inline-block;
+	float:left;
+	margin-left:50px;
+	margin-right:50px;
+}
+
+.season_info{
+	padding-top:40px;
+	display:inline-block;
+	float:left;
+	width:100%;
+}
+
+.purchase_info{
+	display:inline-block;
+	width:30%;
+	padding-left:10px;
+	margin-top:50px;
+}
+
+
+#plmS3{
+	margin-top:50px;
+	display:inline-block;
+	float:left;
+	margin-left:50px;
+	margin-right:50px;
+}
+
+.purchase_info{
+	display:inline-block;
+	width:20%;
+	float:right;
+}
+
+
+#total{
+	display:inline-block;
+	float:right;
+	margin-bottom:100px;
+}
+
+#submit{
+	width: 155px;
+	margin-top:90px;
+	margin-right:50px;
+}
+
+/* puts * before the label for required fields */
+.required_field:before{
+	content:"* ";
+	color:#FF0000;
+}
+/* colour red to indicate to the user that field is required */
+#asterisk{
+	color:#FF0000;
+}
+
+/* sticky footer */
+footer{
+	width:100%;
+	position:relative;
+	float:left;
+	left:0px;
+	bottom:0px;
+	font-family: 'Didact Gothic', sans-serif;
+	color:black;
+}
+
+/* position the copyright info on the left hand side */
+#left_footer{
+	position:absolute;
+	left:0px;
+	bottom:10px;
+}
+/* social links positioned on the right hand side */
+footer a{
+	float:right;
+}
+
+#table{
+	margin:0px auto;
+}
+
+#expireMM{
+	width:-168px;
+}
+
